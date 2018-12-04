@@ -15,6 +15,8 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
 
   has_one :profile  # FK is in the users table: users.profile_id -->  HAS ONE
+  # is the same
+  # has_one(:profile)
 
   has_many :emails  # FK is in the emails table: emails.user_id --> HAVE MANY
 end
