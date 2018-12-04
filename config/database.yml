@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  database: ar_relations_demo
+  pool: 5
+  timeout: 5000
